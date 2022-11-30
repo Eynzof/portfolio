@@ -9,7 +9,7 @@ const Header = () => {
                 <Link href="/">
                     <span className={styles.nav__logo}>Smith</span>
                 </Link>
-                <div className="nav__menu">
+                <div className={styles.nav__menu}>
                     <ul className={`${styles.nav__list} grid`}>
                         <li className="nav__item">
                             <Link href="#home" className={`${styles.nav__link} ${styles.active__link}`}>
@@ -50,10 +50,9 @@ const Header = () => {
 
 
                     <i className={`uil uil-times ${styles.nav__close}`}></i>
-
-                    <div className={styles.nav__toggle}>
-                        <i className="uil uil-apps"></i>
-                    </div>
+                </div>
+                <div className={styles.nav__toggle}>
+                    <i className="uil uil-apps"></i>
                 </div>
             </nav>
         </header>
