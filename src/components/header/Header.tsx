@@ -10,7 +10,7 @@ const Header = () => {
         <header className={styles.header}>
             <nav className={`${styles.nav} container`}>
                 <Link href="/">
-                    <span className={styles.nav__logo}>Smith</span>
+                    <span className={styles.nav__logo}>Enzo Li</span>
                 </Link>
                 <div className={Toggle ? `${styles.nav__menu} ${styles.show__menu}` : `${styles.nav__menu}`}>
                     <ul className={`${styles.nav__list} grid`}>
