@@ -76,7 +76,7 @@
         transition: .3s;
     }
     /* Show Menu */
-    .show-menu {
+    .show__menu {
         bottom: 0;
     }
 
