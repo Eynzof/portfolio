@@ -4,6 +4,7 @@ import styles from '../src/styles/Home.module.css'
 import Header from "../src/components/header/Header";
 import Home from "../src/components/home/Home";
 import About from "../src/components/about/About";
+import Skills from "../src/components/skills/Skills";
 export default function Index() {
     return (
         <div >
@@ -18,8 +19,10 @@ export default function Index() {
             <>
                 <Header></Header>
                 <main className="main">
+                    {/* add sections here*/}
                     <Home/>
                     <About/>
+                    <Skills/>
                 </main>
             </>
 

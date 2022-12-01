@@ -7,8 +7,8 @@ const About = () => {
     return (
         <div>
             <section className="about section" id="about">
-                <h2 className="section__title">About Me</h2>
-                <span className="section__subtitle">My Introduction</span>
+                <h2 className="section__title">关于我</h2>
+                <span className="section__subtitle">个人简介</span>
 
                 <div className={`${styles.about__container} container grid`}>
                     <img src={AboutImg.src} alt="" className={styles.about__img}/>
