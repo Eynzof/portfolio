@@ -12,9 +12,9 @@ const About = () => {
 
                 <div className={`${styles.about__container} container grid`}>
                     <img src={AboutImg.src} alt="" className={styles.about__img}/>
-                    <div className="about__data">
+                    <div className={styles.about__data}>
                         <Info/>
-                        <p className="about__description">Frontend developer, I create web pages with UX user interface,
+                        <p className={styles.about__description}>Frontend developer, I create web pages with UX user interface,
                             I have years of experience and many clients are happy with the projects carried out</p>
 
                         <a href='/John-Cv.pdf' className="button button__flex">Download CV <svg
