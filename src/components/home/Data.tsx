@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './home.module.css';
 
 const Data = () => {
     return (
         <div className="home__data">
-            <h1 className="home__title">Enzo Li <svg
+            <h1 className={styles.home__title}>Enzo Li <svg
                 width="36"
                 height="36"
                 viewBox="0 0 48 48"
@@ -53,7 +54,7 @@ const Data = () => {
                 ></path>
             </svg></h1>
 
-            <h3 className="home__subtitle">Frontend Engineer</h3>
+            <h3 className={styles.home__subtitle}>Frontend Engineer</h3>
             <p className="home__description">我是一名前端工程师，活跃于青岛地区。除前端外我涉猎广泛。</p>
             <a href="#contact" className="button button__flex">
                 Say Hello
