@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../src/styles/Home.module.css'
 import Header from "../src/components/header/Header";
 import Home from "../src/components/home/Home";
+import About from "../src/components/about/About";
 export default function Index() {
     return (
         <div className={styles.container}>
@@ -17,7 +18,8 @@ export default function Index() {
             <>
                 <Header></Header>
                 <main className="main">
-                    <Home></Home>
+                    <Home/>
+                    <About/>
                 </main>
             </>
 
