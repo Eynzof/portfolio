@@ -45,7 +45,7 @@ const Qualification = () => {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className={`${styles.qualification__lr}`}>
                                 <span className={`${styles.qualification__rounder}`}></span>
                                 <span className={`${styles.qualification__line}`}></span>
                             </div>
@@ -55,7 +55,7 @@ const Qualification = () => {
 
                             <div></div>
 
-                            <div>
+                            <div className={`${styles.qualification__lr}`}>
                                 <span className={`${styles.qualification__rounder}`}></span>
                                 <span className={`${styles.qualification__line}`}></span>
                             </div>
@@ -84,7 +84,7 @@ const Qualification = () => {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className={`${styles.qualification__lr}`}>
                                 <span className={`${styles.qualification__rounder}`}></span>
                                 <span className={`${styles.qualification__line}`}></span>
                             </div>
@@ -103,7 +103,7 @@ const Qualification = () => {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className={`${styles.qualification__lr}`}>
                                 <span className={`${styles.qualification__rounder}`}></span>
                                 <span className={`${styles.qualification__line}`}></span>
                             </div>
