@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './services.module.css';
 
 const Services = () => {
+
+    const [toggleState, setToggleState] = useState(0);
+
+    const toggleTab = (index: number) => {
+        setToggleState(index)
+    }
+
     return (
         <section className="services section" id="services">
             <h2 className="section__title">雇佣我</h2>
@@ -15,12 +22,14 @@ const Services = () => {
                             产品 <br/> 设计师
                         </h3>
                     </div>
-                    <span className={styles.services__button}>进一步了解 <i
+                    <span className={styles.services__button} onClick={() => toggleTab(1)}>进一步了解 <i
                         className={`uil uil-arrow-right ${styles.services__button__icon}`}></i></span>
 
-                    <div className={styles.services__modal}>
+                    <div
+                        className={toggleState === 1 ? `${styles.services__modal} ${styles.active__modal}` : styles.services__modal}>
                         <div className={styles.services__modal__content}>
-                            <i className={`uil uil-times ${styles.services__modal__close}`}></i>
+                            <i className={`uil uil-times ${styles.services__modal__close}`}
+                               onClick={() => toggleTab(0)}></i>
                             <h3 className={styles.services__modal__title}>产品设计师</h3>
                             <p className={styles.services__modal__description}>Service with more than 3 years of
                                 experience.</p>
@@ -48,13 +57,15 @@ const Services = () => {
                             UI/UX <br/> 设计师
                         </h3>
                     </div>
-                    <span className={styles.services__button}>进一步了解 <i
+                    <span className={styles.services__button} onClick={() => toggleTab(2)}>进一步了解 <i
                         className={`uil uil-arrow-right ${styles.services__button__icon}`}></i></span>
 
-                    <div className={styles.services__modal}>
+                    <div
+                        className={toggleState === 2 ? `${styles.services__modal} ${styles.active__modal}` : styles.services__modal}>
                         <div className={styles.services__modal__content}>
-                            <i className={`uil uil-times ${styles.services__modal__close}`}></i>
-                            <h3 className={styles.services__modal__title}>视觉设计师</h3>
+                            <i className={`uil uil-times ${styles.services__modal__close}`}
+                               onClick={() => toggleTab(0)}></i>
+                            <h3 className={styles.services__modal__title}>UI/UX设计师</h3>
                             <p className={styles.services__modal__description}>Service with more than 3 years of
                                 experience.</p>
                             <ul className={`${styles.services__modal__services} grid`}>
@@ -81,12 +92,14 @@ const Services = () => {
                             视觉 <br/> 设计师
                         </h3>
                     </div>
-                    <span className={styles.services__button}>进一步了解 <i
+                    <span className={styles.services__button} onClick={() => toggleTab(3)}>进一步了解 <i
                         className={`uil uil-arrow-right ${styles.services__button__icon}`}></i></span>
 
-                    <div className={styles.services__modal}>
+                    <div
+                        className={toggleState === 3 ? `${styles.services__modal} ${styles.active__modal}` : styles.services__modal}>
                         <div className={styles.services__modal__content}>
-                            <i className={`uil uil-times ${styles.services__modal__close}`}></i>
+                            <i className={`uil uil-times ${styles.services__modal__close}`}
+                               onClick={() => toggleTab(0)}></i>
                             <h3 className={styles.services__modal__title}>视觉设计师</h3>
                             <p className={styles.services__modal__description}>Service with more than 3 years of
                                 experience.</p>
