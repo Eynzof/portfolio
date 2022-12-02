@@ -5,6 +5,7 @@ import Header from "../src/components/header/Header";
 import Home from "../src/components/home/Home";
 import About from "../src/components/about/About";
 import Skills from "../src/components/skills/Skills";
+import Services from "../src/components/services/Services";
 export default function Index() {
     return (
         <div >
@@ -23,6 +24,7 @@ export default function Index() {
                     <Home/>
                     <About/>
                     <Skills/>
+                    <Services/>
                 </main>
             </>
 
