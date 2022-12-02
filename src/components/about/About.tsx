@@ -3,6 +3,8 @@ import styles from './about.module.css';
 import AboutImg from "../../../assets/about.jpg";
 import Info from "./Info";
 
+import Image from 'next/image'
+
 const About = () => {
     return (
         <section className="about section" id="about">
@@ -10,7 +12,7 @@ const About = () => {
             <span className="section__subtitle">个人简介</span>
 
             <div className={`${styles.about__container} container grid`}>
-                <img src={AboutImg.src} alt="" className={styles.about__img}/>
+                <Image src={AboutImg.src} alt="" className={styles.about__img} width={300} height={300}/>
                 <div className={styles.about__data}>
                     <Info/>
                     <p className={styles.about__description}>Frontend developer, I create web pages with UX user interface,
