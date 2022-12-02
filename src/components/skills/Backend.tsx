@@ -12,7 +12,7 @@ const Backend = () => {
                         <i className={`bx bx-badge-check ${styles.skills__icon}`}></i>
                         <div>
                             <h3 className={styles.skills__name}>PHP</h3>
-                            <span className={styles.skills_level}>初级</span>
+                            <span className={styles.skills__level}>初级</span>
                         </div>
                     </div>
 
