@@ -10,9 +10,7 @@ const Home = () => {
             <div className={`${styles.home__container} container grid`}>
                 <div className={`${styles.home__content} grid`}>
                     <Social/>
-
                     <div className={styles.home__img}></div>
-
                     <Data/>
                 </div>
                 <ScrollDown/>
