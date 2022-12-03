@@ -9,6 +9,7 @@ import Services from "../src/components/services/Services";
 import Qualification from "../src/components/qualification/Qualification";
 import Contact from "../src/components/contact/Contact";
 import Footer from "../src/components/footer/Footer";
+import ScrollUp from "../src/components/scrollup/ScrollUp";
 
 export default function Index() {
   return (
@@ -19,32 +20,18 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <>
-        <Header></Header>
-        <main className="main">
-          {/* add sections here*/}
-          <Home />
-          <About />
-          <Skills />
-          <Services />
-          <Qualification />
-          <Contact />
-          <Footer />
-        </main>
-      </>
+      <Header />
+      <main className="main">
+        <Home />
+        <About />
+        <Skills />
+        <Services />
+        <Qualification />
+        <Contact />
+      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer />
+      <ScrollUp />
     </div>
   );
 }

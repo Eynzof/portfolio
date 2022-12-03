@@ -32,6 +32,7 @@
     display: flex;
     justify-content: center;
     column-gap: 1.25rem;
+    line-height: 1.25rem;
 }
 
 .footer__social__link {
@@ -40,6 +41,7 @@
     font-size: 1.25rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
+    display: inline-block;
 }
 
 .footer__social__link:hover {
@@ -51,6 +53,26 @@
     margin-top: 2.5rem;
     color: var(--title-color);
     text-align: center;
+}
+
+.footer__vercel {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: #111111;
+}
+
+.footer__vercel__logo {
+    margin-left: var(--mb-0-75);
 }
 
 /*=============== BREAKPOINTS ===============*/
