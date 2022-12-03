@@ -78,7 +78,7 @@ const Contact = () => {
             </div>
 
             <div className={`${styles.contact__form__div}`}>
-              <label className={`${styles.contact__form__tag}`}>Mail</label>
+              <label className={`${styles.contact__form__tag}`}>Email</label>
               <input
                 type="email"
                 className={`${styles.contact__form__input}`}
