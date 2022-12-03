@@ -25,7 +25,7 @@ const ScrollUp = () => {
   }, []);
 
   return (
-    <a href="#" className={`${styles.scrollup}`} id="scroll-up">
+    <a href="#home" className={`${styles.scrollup}`} id="scroll-up">
       <i className={`${styles.scrollup__icon} uil uil-arrow-up`}></i>
     </a>
   );
