@@ -159,6 +159,18 @@ img {
   display: inline-flex;
   align-items: center;
 }
+
+/*=============== SCROLLUP ===============*/
+.show__scroll {
+  bottom: 3rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .show__scroll {
+    bottom: 4rem!important;
+  }
+}
+
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 992px) {
   .container {
