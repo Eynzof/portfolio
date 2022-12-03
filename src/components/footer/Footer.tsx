@@ -29,6 +29,9 @@ const Footer = () => {
             <i className="uil uil-github-alt"></i>
           </a>
         </div>
+        <span className={`${styles.footer__copy}`}>
+          &#169; Enzo Li. All rights reserved
+        </span>
       </div>
     </footer>
   );
