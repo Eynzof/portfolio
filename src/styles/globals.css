@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Poppins:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Poppins:wght@500;600&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
     --header-height: 3rem;
@@ -61,7 +61,8 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -70,7 +71,7 @@ button,
 input,
 textarea {
     font-family: var(--body-font);
-    font-size: var(--normal-font-size)
+    font-size: var(--normal-font-size);
 }
 
 body {
@@ -78,7 +79,9 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 }
@@ -156,14 +159,26 @@ img {
 .button__flex {
     display: inline-flex;
     align-items: center;
-
 }
+
+/*=============== SCROLLUP ===============*/
+.show__scroll {
+    bottom: 3rem !important;
+}
+
+@media screen and (max-width: 768px) {
+    .show__scroll {
+        bottom: 4rem !important;
+    }
+}
+
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 992px) {
     .container {
         margin-left: var(--mb-1-5);
         margin-right: var(--mb-1-5);
     }
+
     .button {
         padding: 1rem 1.75rem;
     }
@@ -178,6 +193,7 @@ img {
     body {
         margin: 0 0 var(--header-height) 0;
     }
+
     .section {
         padding: 2rem 0 4rem;
     }
@@ -185,17 +201,16 @@ img {
     .section__subtitle {
         margin-bottom: var(--mb-3);
     }
-
 }
 
 @media screen and (max-width: 576px) {
-
 }
 
 @media screen and (max-width: 350px) {
     :root {
         --big-font-size: 2.25rem;
     }
+
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
