@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./about.module.css";
-import AboutImg from "../../../assets/about.jpg";
+import AboutImg from "../../../assets/profile.jpg";
 import Info from "./Info";
 
 import Image from "next/image";

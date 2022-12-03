@@ -2,9 +2,17 @@ import React from "react";
 import styles from "./home.module.css";
 
 const Data = () => {
+  const title = "Fullstack Engineer";
+  const lore =
+    "我目前从事全栈开发，过去做过许多不同的工作，热爱技术，热爱生活。";
+  const hello = "打招呼";
+
   return (
     <div className={styles.home__data}>
       <h1 className={styles.home__title}>
+        <span style={{ fontSize: "1.5rem", fontWeight: "normal" }}>
+          Hi, I&apos;m
+        </span>{" "}
         Enzo Li{" "}
         <svg
           width="36"
@@ -57,10 +65,10 @@ const Data = () => {
         </svg>
       </h1>
 
-      <h3 className={styles.home__subtitle}>Frontend Engineer</h3>
-      <p className={styles.home__description}>我是一名前端工程师.</p>
+      <h3 className={styles.home__subtitle}>{title}</h3>
+      <p className={styles.home__description}>{lore}</p>
       <a href="#contact" className="button button__flex">
-        Say Hello
+        {hello}
         <svg
           className="button__icon"
           xmlns="http://www.w3.org/2000/svg"

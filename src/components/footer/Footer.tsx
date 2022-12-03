@@ -20,13 +20,19 @@ const Footer = () => {
           </li>
         </ul>
         <div className={`${styles.footer__social}`}>
-          <a className={styles.footer__social__link} target="_blank">
-            <i className="uil uil-instagram"></i>
+          <a className={styles.footer__social__link} href="/wechat.jpeg">
+            <i className="uil uil-comment-medical"></i>
           </a>
-          <a className={styles.footer__social__link} target="_blank">
-            <i className="uil uil-dribbble"></i>
+          <a
+            className={styles.footer__social__link}
+            href="https://discordapp.com/users/869126597452627988"
+          >
+            <i className="uil uil-discord"></i>
           </a>
-          <a className={styles.footer__social__link} target="_blank">
+          <a
+            className={styles.footer__social__link}
+            href="https://github.com/Eynzof"
+          >
             <i className="uil uil-github-alt"></i>
           </a>
         </div>
