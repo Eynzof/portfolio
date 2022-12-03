@@ -7,6 +7,7 @@ import About from "../src/components/about/About";
 import Skills from "../src/components/skills/Skills";
 import Services from "../src/components/services/Services";
 import Qualification from "../src/components/qualification/Qualification";
+import Contact from "../src/components/contact/Contact";
 export default function Index() {
   return (
     <div>
@@ -25,6 +26,7 @@ export default function Index() {
           <Skills />
           <Services />
           <Qualification />
+          <Contact />
         </main>
       </>
 
