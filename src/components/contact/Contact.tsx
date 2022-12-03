@@ -1,7 +1,31 @@
-import React from "react";
+// @ts-nocheck
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import styles from "./contact.module.css";
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_8n8g7sr",
+        "template_gblh3h8",
+        form.current,
+        "o9fF9AtVT5iCPK2DF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  // @ts-ignore
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">联系我</h2>
@@ -66,7 +90,12 @@ const Contact = () => {
           <h3 className={`${styles.contact__title}`}>
             Write me to your project
           </h3>
-          <form action="" className={`${styles.contact__form}`}>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            action=""
+            className={`${styles.contact__form}`}
+          >
             <div className={`${styles.contact__form__div}`}>
               <label className={`${styles.contact__form__tag}`}>Name</label>
               <input
